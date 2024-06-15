@@ -1,0 +1,198 @@
+html,
+body {
+    padding: 0;
+    background-color: #999e9f !important;
+}
+
+.content {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 130px;
+    margin-left: 130px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    background-color: #2a3073;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: White;
+    text-decoration: none; 
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar a:focus {
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.sidebar a:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 100%;
+    border-bottom: 2px solid white; /* Add border */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu,
+.submenu,
+.logout {
+    margin-top: auto;
+    padding: 10px; /* Add padding to all sections */
+}
+
+.btn-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cc2a2a;
+    border-radius: 6px;
+    color: #f6f7ff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-logout:hover {
+    background-color: white;
+    color: #252422;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header h5 {
+    color: rgb(174, 174, 174);
+    font-weight: 400;
+}
+
+.menu aside {
+    width: 20px;
+    height: 1px;
+    border: 1px White solid;
+    margin-right: 20px;
+}
+
+
+.submenu a {
+    text-decoration: none;
+    color: rgb(174, 174, 174);
+    display: flex; /* Add flex display */
+    align-items: center; /* Vertically center content */
+    margin-left: 10px; /* Adjust margin */
+}
+
+.submenu-link:hover {
+    color: White;
+}
+
+.content {
+    padding-left: 250px; /* Adjust content padding */
+}
+
+.user-table {
+    padding-left: 250px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form {
+    background-color: white;
+    box-shadow: 0px 8px 30px 0px rgba(37, 36, 34, 0.07);
+    border-radius: 20px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#delete-icon {
+    color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar {
+        min-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-dashboard {
+        width: 100px;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        min-width: 150px;
+        overflow-y: visible;
+    }
+
+    .logout {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
